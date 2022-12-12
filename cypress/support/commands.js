@@ -88,3 +88,6 @@ Cypress.Commands.add('automationLogin', (email,password) =>{
     cy.get('.login-form > form > .btn').click()
 
 })
+
+
+////=========================================
