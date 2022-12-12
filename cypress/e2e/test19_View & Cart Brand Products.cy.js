@@ -14,6 +14,13 @@ describe('View & Cart Brand Products',()=>{
         cy.automationexerciseAnasayfa()
         cy.anaSayfaDogrulama()
         cy.contains(' Products').click()
+        cy.get('.brands_products').should('be.visible')
+        cy.get('.brands-name > .nav > :nth-child(2) > a').click()
+        cy.url().should('include','H&M')
+        cy.get('.features_items').should('be.visible')
+        cy.get('.brands-name > .nav > :nth-child(4) > a').click()
+        cy.url().should('include','Mast')
+        cy.get('.features_items').should('be.visible')
         
         
     }) 
